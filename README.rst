@@ -4,7 +4,6 @@ Yarpiz Structure (ypstruct)
 
 A simple and easy-to-use C-like structure for Python
 
----
 
 *************
 Installation
@@ -25,14 +24,14 @@ then run:
 *************
 Sample Usage
 *************
+
+A simple code folows:
 ::
       from ypstruct import structure
 
       if __name__ == "__main__":
-
             p = structure()
             p.x = 3
             p.y = 4
             p.A = p.x * p.y
-
             print(p)
