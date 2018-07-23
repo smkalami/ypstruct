@@ -25,7 +25,7 @@ then run:
 Sample Usage
 *************
 
-A simple code folows:
+A simple code follows:
 ::
       from ypstruct import structure
 

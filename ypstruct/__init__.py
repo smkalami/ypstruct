@@ -11,24 +11,28 @@ class structure (dict):
                 return None
         else:
             return None
-
+    
     def __setattr__(self, field, value):
         if field not in dir(self):
             self[field] = value
         else:
             return super().__setattr__(field, value)
     
+    # Get the list of structure fields
     def fields(self):
         return list(self.keys())
 
+    # Deletes a field from structure
     def remove_field(self, field):
         if field in self.keys():
             del self[field]
     
+    # Adds a new field to the structure
     def add_field(self, field, value = None):
         if field not in self.keys():
             self[field] = value
 
+    # Creates a shallow copy of the structure
     def copy(self):
         import copy as cp
         self_copy = structure()
@@ -40,6 +44,7 @@ class structure (dict):
         
         return self_copy
 
+    # Creates a deep copy of the strucre
     def deepcopy(self):
         import copy as cp
         self_copy = structure()
@@ -51,5 +56,6 @@ class structure (dict):
         
         return self_copy
 
+    # Repeats (replicates) the structure to create an stratucre array (eg. for initialization)
     def repeat(self, n):
         return [self.deepcopy() for i in range(n)]
