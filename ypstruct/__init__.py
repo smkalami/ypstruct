@@ -1,8 +1,9 @@
 class structure (dict):
 
+    # String representation of the structure
     def __repr__(self):
         return 'structure({})'.format(super().__repr__())
-
+    # Get field value
     def __getattr__(self, field):
         if field not in dir(self):
             if field in self.keys():
@@ -12,6 +13,7 @@ class structure (dict):
         else:
             return None
     
+    # Set field value
     def __setattr__(self, field, value):
         if field not in dir(self):
             self[field] = value

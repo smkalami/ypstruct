@@ -35,3 +35,5 @@ A simple code follows:
             p.y = 4
             p.A = p.x * p.y
             print(p)
+
+.
