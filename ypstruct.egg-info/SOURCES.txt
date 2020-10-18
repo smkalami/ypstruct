@@ -1,7 +1,0 @@
-README.rst
-setup.py
-ypstruct/__init__.py
-ypstruct.egg-info/PKG-INFO
-ypstruct.egg-info/SOURCES.txt
-ypstruct.egg-info/dependency_links.txt
-ypstruct.egg-info/top_level.txt
