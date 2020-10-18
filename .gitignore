@@ -21,6 +21,7 @@ sdist/
 var/
 wheels/
 *.egg-info/
+ypstruct.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
